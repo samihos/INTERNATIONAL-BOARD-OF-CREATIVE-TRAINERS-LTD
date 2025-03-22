@@ -1,0 +1,43 @@
+       /* الخلفية صورة */
+       body {
+        background: url('Untitled-1.png') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    /* الصناديق بلون فاتح */
+    .container-box {
+        background: rgba(255, 255, 255, 0.9); /* لون أبيض شفاف قليلاً */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        color: #333;
+    }
+
+    /* أيقونة التحقق */
+    .check-icon {
+        font-size: 90px;
+        color: green;
+        animation: bounce 1s infinite alternate;
+    }
+
+    @keyframes bounce {
+        from { transform: translateY(0); }
+        to { transform: translateY(-10px); }
+    }
+
+    #countdown {
+        font-size: 18px;
+        font-weight: bold;
+        color: #dc3545;
+    }
+
+    /* زر إظهار وإخفاء الكود */
+    .input-group-text {
+        cursor: pointer;
+    }
